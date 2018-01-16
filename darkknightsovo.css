@@ -1,0 +1,100 @@
+
+
+
+
+
+
+
+
+
+.contenedorsovo{
+
+position: relative;
+height: 950px;
+background-color: black;
+box-shadow: -2px 23px 54px 8px rgba(0,0,0,1);
+   -webkit-box-shadow: -2px 23px 54px 8px rgba(0,0,0,1);
+   -moz-box-shadow: -2px 23px 54px 8px rgba(0,0,0,1);
+	padding:3px;
+	margin-top: 6px;
+	
+
+	
+	
+
+	
+}
+.resultadovisual{
+position: absolute;
+background-color: black;
+    margin-top: 22px;
+    box-shadow: -2px 23px 54px 8px rgba(0,0,0,1);
+   -webkit-box-shadow: -2px 23px 54px 8px rgba(0,0,0,1);
+   -moz-box-shadow: -2px 23px 54px 8px rgba(0,0,0,1);
+visibility:hidden;
+
+
+
+}
+
+.reintentar
+{
+	color: #BC0707;
+	position: absolute;
+	 cursor:pointer;
+	 text-shadow:2px 2px 5px white;
+	margin-left: 10px;
+}
+.textoresultado{
+	font-size: 1.2em;
+	color: white;
+	padding: 7px;
+	
+	text-shadow:2px 2px 5px black;
+
+}
+
+.adaptable{
+	
+	width:100%;
+
+}
+
+.titulocues{
+	color: black;
+	text-shadow:2px 2px 5px white;
+	font-size: 2em;
+}
+
+.formulario{
+
+text-align: left;
+color: black;
+position: absolute;
+padding: 4px;
+font-size: 15px;
+
+
+
+
+}
+
+
+@media screen and (max-width: 1205px) {
+
+
+
+div.contenedorsovo{
+height: 1580px;
+
+
+}
+
+
+
+
+}
+
+
+
+

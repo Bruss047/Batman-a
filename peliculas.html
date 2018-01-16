@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Prosto+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+
+<title>Batmanía</title>
+
+
+
+
+<style type="text/css">
+
+
+.contefilms{
+
+	margin-top: 4px;
+
+	background-color: black;
+	border-radius: 1%;
+		box-shadow:-2px 23px 54px 8px rgba(0,0,0,1);
+	-webkit-box-shadow:-2px 23px 54px 8px rgba(0,0,0,1);
+	-moz-box-shadow:-2px 23px 54px 8px rgba(0,0,0,1);
+
+}
+.imagenespelis{
+	margin:5px;
+	width: 77%;
+}
+.sombratitulo {
+	color:white;
+	text-shadow:2px 2px 5px white;
+}
+
+span{
+	color: red;
+	font-size: 0.9em;
+}
+.subcontenedor {
+			position: relative;
+			width: auto;
+
+			
+		}
+		.cabecerax {
+			display: inline-block;
+			text-decoration: none !important;
+			padding: 10px;
+            font-size: 1.2em;
+            background-color: white;
+			border: 0.5px solid;
+			position: relative;
+			color: black;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			transform: translateY(2px);
+			z-index: 2;
+		}
+		
+
+	.titulofilm{
+			color: white;
+			font-size: 1.9em;
+		}
+		.pestana {
+			position: absolute;
+		   
+		   height: 1540px;
+		  
+			background-color: black;
+			padding:4px
+			border: 0.5px solid;
+			margin-top: 5.5%;
+			visibility: hidden;
+			opacity: 0;
+			transition: visibility 1s, opacity 1s;
+		}
+
+		
+		.negro{
+		   background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 38%, rgba(246,246,246,1) 47%, rgba(246,246,246,1) 60%, rgba(246,246,246,0.7) 81%);
+             background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 38%, rgba(246,246,246,1) 47%, rgba(246,246,246,1) 60%, rgba(246,246,246,0.7) 81%);
+		}
+		.p-activa {
+			visibility: visible;
+			opacity: 1;
+		}
+		.c-activa {
+			border-bottom-color: white;
+		}
+
+		@media screen and (max-width:1120px) {
+	.pestana {
+		margin-top: 5%;
+
+	}
+	
+}
+	@media screen and (max-width:1130px) {
+	.pestana {
+		margin-top: 6%;
+		overflow: auto;
+
+	}
+	
+}
+	@media screen and (max-width:800px) {
+	.pestana {
+		margin-top: 6%;
+	}
+	
+}
+
+@media screen and (max-width:700px) {
+	.pestana {
+		margin-top: 7.6%;
+	}
+}
+	
+	@media screen and (max-width:680px) {
+	.pestana {
+		margin-top: 7%;
+	}
+}
+
+	@media screen and (max-width:650px) {
+	.pestana {
+		margin-top: 9.3%;
+	}
+}
+
+@media screen and (max-width:579px) {
+	.pestana {
+		margin-top: 13.3%;
+	}
+}
+@media screen and (max-width:500px) {
+	.pestana {
+		margin-top: 14.3%;
+	}
+}
+
+@media screen and (max-width:490px) {
+	.pestana {
+		margin-top: 14.3%;
+	}
+}
+@media screen and (max-width:455px) {
+	.pestana {
+		margin-top: 13.3%;
+	}
+}
+
+@media screen and (max-width:450px) {
+	.pestana {
+		margin-top: 18.3%;
+	}
+}
+
+	@media screen and (max-width:400px) {
+	.pestana {
+		margin-top: 28.7%;
+	}
+}
+
+		
+		p{
+			text-align: justify;
+			color: white;
+			font-size: 1.1em;
+			padding: 8px;
+		}
+
+
+		#salv{
+			background-color: red;
+			height: 120px;
+			width: 300px;
+		}
+
+
+</style>
+
+
+<script type="text/javascript">
+	
+
+	function mostrarPestana(n){
+		var pestanas = document.getElementsByClassName("pestana");
+		var cabecera = document.getElementsByClassName("cabecerax");
+
+		for(i = 0; i<pestanas.length; i++){
+			if(pestanas[i].className.includes("p-activa")){
+				pestanas[i].className = pestanas[i].className.replace("p-activa", "");
+				cabecera[i].className = cabecera[i].className.replace("c-activa", "");
+			cabecera[i].className = cabecera[i].className.replace("negro", "");
+				
+				break;
+			}
+		}
+		pestanas[n].className += " p-activa";
+		cabecera[n].className += " c-activa";
+		cabecera[n].className += " negro";
+		
+
+	}
+</script>
+
+
+
+
+
+</head>
+
+
+<body>
+<header>
+<div class="cabecera col-md-12">
+    <div class="titulomania">
+        <h1 class="blanco concert"> BATMANÍA</h1>
+    </div>
+    <img src="imgs/minima.jpg" class="img-responsive">
+</div>
+</header>
+<nav class="col-xs-12 col-md-12 col-sm-12 ">
+<ul class="ejm2 estilobar col-xs-12 col-md-12 col-sm-4 ">
+    <li class=" concert tamanionav col-xs-4 col-md-4 col-sm-4"><a class="colorr" href="index.html">INICIO </a></li>
+    <li class="  concert tamanionav col-xs-4 col-md-4 col-sm-4"><a class="colorr" href="serie.html">90´s SERIE </a></li>
+    <li class="  concert tamanionav col-xs-4 col-md-4 col-sm-4"><a class="colorr" href="comicstore.html">COMICSTORE </a></li>
+</ul>
+</nav>
+
+<div class="contefilms  col-xs-12 col-md-8 col-sm-12 col-md-offset-2 text-center ">
+
+
+<div class="subcontenedor ">
+
+
+<h1 class="permanent titulofilm sombratitulo">Trilogía de Nolan</h1>
+
+
+			<a href="#" class="cabecerax negro c-activa col-xs-4 permanent" onclick="mostrarPestana(0);"><span>Batman Begins </span></a>
+
+			
+			<div class="pestana p-activa">
+			<div> <img class="imagenespelis" src="imgs/begins.jpg"></div>
+				<p class="concert" >
+					<span>Fecha de estreno: </span>Junio de 2005.<br> 
+<span>Duracion: </span> 140 Minutos. <br>
+<span>Presupuesto: </span>150 000 000.<br>
+<span>Recaudacion: </span> 374 000 000.<br>
+<span>Director: </span>Christopher Nolan.<br>
+<span>Cast: </span> Christian Bale (Bruce Wayne/ Batman)/ Michael Kane(Alfred)/ Liam Neeson (Ra´s al Ghul)/ Katie Holmes (Rachel Dawes)/ Gary Oldman (Sgto. Jim Gordon)/ Cillian Murphy( Dr. Crane - Scarecrown)/ Tom Wilkinson (Carmine Falcone)/ Morgan Freeman (Lucius Fox).<br><br> <br>
+Nolan y David Goyer (guionista) comenzaron los preparativos de la pelicula en 2003 tomando como premisa una pelicula enfocada en la humanidad y el realismo del personaje. La pelicula, que tomo la ciudad de Chicago para recrear Gotham, fue realizada principalmente con modelos a escala minimizando asi el uso del CGI (imagenes generadas por computadora). <br> <br>
+Los guionistas consideraron traer en esta cinta a Harvey Dent (Two Faces) pero en cambio fue reemplazado por Rachel Dawes cuando dieron cuenta de que no podrian "hacerle justicia" en esta entrega. Utilizaron el recurso de la ausencia de Bruce Wayne por varios años extrayendo el concepto del comic de Frank Miller "Batman: Year One" inspirando la version de Jim Gordon tambien en esta obra. <br> <br>
+Aclamada por el publico tanto como por los criticos, fue catalogada enseguida como una de las mejores peliculas del genero comenzando asi una corriente rupturista y fomentando el inicio de las peliculas de superheroes y antiheroes tal como se conocen hoy en dia.<br><br> 
+
+<span>PELICULA:</span> <br>
+<br>
+
+
+Los padres del pequeño Bruce Wayne han muerto. Su mayordomo Alfred debe hacerse cargo del pequeño educándolo y cuidándolo de la mejor manera posible. Ya de adulto, y durante el juicio del criminal que asesinó a sus padres, Bruce planea vengarse de aquel que arruinó su vida a temprana edad. Consigue frenar su impulso y sale del tribunal sin lastimar a nadie. No son esos los valores aprendidos, no es esa la manera. Debe haber justicia en Gotham, mas no venganza. De esta forma inicia su travesía por el mundo, buscando la preparación y los recursos necesarios para un día regresar a Gotham y defenderla del mal y la corrupción que la asola; corrupción que lleva el rostro de Carmine Falcone, cabecilla principal de las mafias de Gotham.  <br><br>
+
+Durante su camino se topa con una persona que dice servir al gran maestro Ra’s al Ghul, quien lidera una organización secreta llamada "La Liga de las Sombras". Este grupo se infiltra en distintos países con el fin de restaurar el orden y combatir el crimen. Bruce es entrenado en distintas artes, siendo el mejor alumno. Finalmente durante su ceremonia de iniciación, Bruce se resiste a concretar el ritual establecido -asesinar a un criminal- y termina escapando. <br><br>
+
+Tras años de ausencia Bruce Wayne regresa a Gotham, comenzando a forjar un símbolo que inspire temor en los criminales, un símbolo de justicia pero no de venganza. Elige la forma de un murciélago ya que lo atemoriza. <br><br>
+
+Tiempo después, reaparece el hombre que lo acogió e introdujo en la Liga de las Sombras, hombre que lo salvó de todo el desastre que generó cuando escapó de la Liga. Este hombre le revela su identidad: Es el verdadero Ra’s al Ghul, la cabeza del demonio. Destruye la mansión Wayne y da a Bruce por muerto. Pero Bruce,l ya formado Batman, es salvado por Alfred. 
+Finalmente sale a la luz el plan de Ra’s al Ghul: envenenar todo Gotham a través del sistema de alcantarillado de la ciudad, mediante un arma capaz de vaporizar cualquier líquido, creada por la propia industria Wayne. <br><br>
+
+En el agua de las tuberías se encuentra vertido el gas del miedo del Doctor Crane, alias El Espantapájaros, que estuvo trabajando con Ra’s al Ghul todo este tiempo. Usando el tren de Gotham, el arma de vaporización se transporta por toda la ciudad haciendo explotar las tuberías llenando todo del gas mortal de Crane.  <br><br>
+
+La única manera de parar la locura es deteniendo el tren y apagando la maquina. Con la ayuda de Jim Gordon, Batman intercepta el tren a la vez que se enfrenta a Ra’s al Ghul. Bruce vence a la Cabeza del Demonio, pero no lo elimina como se requiere. Sino que lo abandona a su suerte saliendo justo a tiempo para salvarse del derrumbe del gran tren de Gotham una vez que Jim Gordon, desde el Batimóvil destruye el sistema de vías aéreas del tren. Gotham es salvada y la gente proclama a su misterioso salvador.  <br><br>
+
+Todo termina con Batman y Jim Gordon conversando respecto a un nuevo criminal que está asolando Gotham con caos y locura. Se hace llamar el Joker.
+
+<br>
+<br>
+<br>
+
+
+		</p>
+		
+</div>
+
+
+
+<a href="#" class="cabecerax  col-xs-4 permanent" onclick="mostrarPestana(1);"><span>The Dark Knight</span> </a>
+			<div class="pestana ">
+			<div> <img class="imagenespelis" src="imgs/dknight.jpg"></div>
+				<p class="concert">
+						<span>Fecha de estreno: </span>Julio de 2008.<br> 
+<span>Duracion: </span> 152 Minutos. <br>
+<span>Presupuesto: </span>$ 185.000.000.<br>
+<span>Recaudacion:</span>  $ 1.004.558.444.<br>
+<span>Director: </span>Christopher Nolan.<br>
+<span>Cast: </span>Christian Bale (Bruce Wayne/ Batman)/ Michael Caine(Alfred)/ Heath Ledger (The
+Joker)/ Aaron Eckhart (Harvey Dent)/ Eric Roberts (Sal Maroni)/Colin McFarlane (Gillian B.
+Loeb)/ Maggie Gyllenhaal (Rachel Dawes)/ Gary Oldman (Sgto. Jim Gordon)/ Cillian Murphy( Dr. Crane -
+Scarecrown)/ Morgan Freeman (Lucius Fox).<br><br> <br>
+El 31 de Julio de 2006 Warnes Bros anunciaba oficialemente el inicio de la produccion del
+segundo film de la trilogia: "The Dark Knight" la cual fue la primer pelicula del murcielago sin
+contar con su propio nombre en el titulo de la cinta. <br>
+Según Nolan: "Nunca quisimos hacer una historia de origen para el Joker en esta película
+ya que el arco de la historia es mucho más de Harvey Dent; el Joker es presentado como
+un absoluto. Es un elemento muy emocionante en la película, y [uno] muy importante, pero
+queríamos lidiar con el ascenso del Joker, no su origen". Sugirió que Batman: The Killing
+Joke influenció una sección del diálogo del Joker en la película, en donde dice que
+cualquiera puede convertirse en alguien como él dadas las circunstancias adecuadas.77​
+También citó a Heat como «una especie de inspiración" para su objetivo de «contar una
+muy larga historia de la ciudad o la historia de una ciudad": "Si quieres abordar a Gótica,
+quieres darle una especie de peso, amplitud y profundidad allí. Así que terminas lidiando
+con las figuras políticas, las figuras mediáticas. Eso es parte de todo el tejido de cómo una
+ciudad está unida." <br>
+Nolan diseñó la apariencia de Dos Caras en la película como una de las menos
+perturbadoras, explicando:"Cuando miramos versiones menos extremas de él, eran
+demasiado reales y más espantosas. Cuando miras una película como Piratas del Caribe,
+algo como eso, hay algo sobre un efecto visual muy fantasioso y detallado, que en mi
+opinión es más poderoso y menos repulsivo." Framestore creó 120 tomas generadas por
+computadora del rostro cicatrizado de Dos Caras. El director sintió que usar maquillaje no
+se vería realista, ya que este se agrega a la cara, al contrario de las quemaduras reales.<br><br> 
+ 
+ 
+<span>PELICULA:</span><br> 
+ 
+Un nuevo criminal hace su aparición en Gotham. Se hace llamar "Joker". Aparentemente
+usa pintura de guerra para maquillarse como payaso y ha estado robando bancos de la
+mafia en las ultimas semanas. Batman se dispone a darle caza con la ayuda de Jim
+Gordon. La mafia de Gotham en otro lado de la ciudad se debate en torno a los robos que
+sufrieron sus bienes en los distintos bancos de la ciudad. El payaso aparece en escena.
+Bastante divertido les cuenta de que el les robo y resalta el hecho de que el crimen en
+Gotham ya no es lo que era antes debido a una unica razon: Batman. Joker se ofrece a
+asesinar a Batman a cambio de la mitad de sus bienes. <br>
+La propuesta (luego de un
+sobresalto general de la cupula mafiosa) es aceptada. Ciudad Gotica se sumerge en el
+caos. Rachel Dawes y el impoluto fiscal de distrito Harvey Dent son victimas de un juego
+macabaro del Joker. Batman salva erroneamente a Dent de su cautiverio asi como de morir
+quemado mientras en otra parte de la ciudad Rachel Dawes muere en una explosion. Asi
+naceria Two Faces (Para informacion sobre su origen acceder a la parte de biografias). La
+muerte del comisionado de policia, de fiscales, la explosion del Hospital genral de Gotham
+terminan de sumergir todo en un caos. Luego de varios eventos el Joker prepara su ultima
+jugada. Mientas los ciudados de la ciudad abandonan la misma a traves de un ferry en otra
+embarcacion del mismo tipo los peores criminales de Gotham hacen lo mismo.  <br>
+
+El payaso
+coloco una bomba en cada ferry dejando el detonador de cada una en los barcos opuestos.
+Es decir, los ciudadanos tienen hasta las 00hs para hacer volar por los aires el Ferry de los
+criminales para salvarse de morir en una explosion ellos mismo asi como se da el caso
+inverso en la otra embarcacion. Batman consigue encontrar al Joker a traves de una
+tecnologia simil radar que estuvo desarrollando en Industrias Wayne y gracias a la ayuda
+operativa de Lucius Fox. Se libra una pelea entre ambos. El villano logra derribar al
+murcielago y lo obliga a presenciar lo que supone que en minutos va a ocurrir. Uno de los
+dos Ferryes va a explotar. Pasadas las 00hs (Hora limite) el Joker queda atonito al
+comprobar que ningun barco ha explotado. Su teoria sobre la ciudad y su gente quedo
+deshecha. Decide ponerle fin al juego el mismo. Antes de que pueda accionar el detonador
+que llevaba consigo Batman logra interceptarlo y lo deja colgando de un de los edificios
+mas altos de Gotham. El payaso comienza a reir y le dice que dejo una sopresa en la
+personalidad de Harvey Dent, el caballero blanco de Gotham. <br>
+Bruce acude a una parte de la ciudad donde Havery, ahora Two Faces, amenaza con
+quitarle la vida a uno de los hijos de Jim Gordon ya que no cree que este haya hecho lo
+posible para salvar a su prometida, Rachel. Batman acude justo a tiempo y tira a Dent por
+la ventana en contruccion de aquel edificio cayendo luego el tambien quedando
+inconsciente. Despierta justo para detener Gordon(ahora comisionado Gordon) en el acto de
+dar aviso a las autoridades de lo sucedido recientemente. Le dice que cargue la culpa
+contra el, contra Batman. Dent era el simbolo de esperanza mas grande que tenia la ciudad
+y eso no podia desaparecer. No podian borrar su legado. El pasaria a la clandestinidad
+soportando la carga. Seria un protector vigilante. Seria un Caballero de la Noche. 
+				</p>
+			</div>
+
+		<a href="#" class="cabecerax    col-xs-4 permanent" onclick="mostrarPestana(2);"><span>The Dark Knight Rises</span></a>
+			<div class="pestana ">
+			<div> <img class="imagenespelis" src="imgs/drises.jpg"></div>
+				<p class="concert">
+					 <span>Fecha de estreno: </span>Julio de 2012.<br> 
+<span>Duracion: </span> 165 Minutos. <br>
+<span>Presupuesto: </span>$ 230.000.000.<br>
+<span>Recaudacion:</span>  $ 1.085.939.099.<br>
+<span>Director: </span></span>Christopher Nolan.<br>
+<span>Cast: </span>Christian Bale (Bruce Wayne/ Batman)/ Michael Caine(Alfred)/ Anne Hathaway (CatWoman)/ Tom Hardy (Bane)/ Marion Cotillard (Talia Al Ghul)/Joseph Gordon-Levitt (John Blake)/ Gary Oldman (Sgto. Jim Gordon)/ Cillian Murphy( Dr. Crane -
+Scarecrown)/ Morgan Freeman (Lucius Fox).<br><br> <br>
+ El director Christopher Nolan accedió a una tercera película sobre la base de la búsqueda de una historia que valiera la pena, temiendo que se aburriría a mitad de la producción si descubriera que la película era innecesaria. Para diciembre de 2008, el director completó un bosquejo aproximado de la historia, antes de comprometerse con Inception. Más tarde ese mismo mes, Alan F. Horn confirmó que, mientras que había discusiones con el cineasta en curso sobre una tercera película, no había habido un casting, así que negó todos los rumores del tema. Antes de que Nolan confirmara su participación, Gary Oldman había dicho que confiaba en que regresaría. <br>
+
+Luego del éxito del Joker en The Dark Knight, los ejecutivos del estudio querían que el Acertijo fuera el villano principal, ya que lo consideraban un personaje similar y alentaba la elección de Leonardo DiCaprio. Sin embargo, el director quería que el antagonista fuera muy diferente de las encarnaciones anteriores y se comprometió a usar a Bane en su lugar, citando la necesidad de un personaje con una presencia física dentro de la película. Al principio no estaba familiarizado con el origen del personaje, pero destacó el atractivo de un arquetipo, etiquetándolo como «el extremo de algún tipo de maldad». Al comparar la elección del nuevo villano con la del anterior, subrayó a este último como un ejemplo de «anarquía diabólica y caótica» y con un «diabólico sentido del humor», yuxtaponiéndolo contra Bane, a quien comparó con «un monstruo clásico del cine [...] con un cerebro magnífico.» <br>
+ A pesar de que el director había aclarado que Robin no aparecería en la franquicia, ya que Bale interpreta a un «Batman joven», al final de la película se revela que el primer nombre de John Blake, a quien interpreta Joseph Gordon-Levitt, es Robin, haciendo referencia a dicho personaje. Nolan dijo que su bosquejo del guion estaba inspirado en la novela de Charles Dickens de 1859 Historia de dos ciudades, que gira en torno a la revolución francesa. Este homenaje al escritor fue brevemente ilustrado con Bane tejiendo cordón de paracaídas con los dedos discretamente en la película, simbolizando a su personaje literario Madame Defarge, y más manifiestamente con el encomio del Comisionado Gordon para Bruce Wayne al final de la película, el cual el director tomó directamente del libro clásico. <br>
+
+No fue hasta el 9 de febrero de 2010 que se anunció que Nolan había «descifrado» la historia de una secuela de The Dark Knight y se comprometió a regresar al proyecto. Poco después, se anunció que David S. Goyer y Jonathan Nolan estaban trabajando en un guion. Goyer dejó el proyecto durante la preproducción para comenzar a trabajar en El hombre de acero; Jonathan continuó escribiendo el guion basado en la historia de su hermano y del otro guionista.17​ Chris Nolan dijo que el bosquejo original de su hermano era de como 400 páginas. Algunos han comparado el argumento de la película con el arco argumental de la serie de cómics de Batman Knightfall (1993), que mostraba a Bane; la miniserie The Dark Knight Returns (1986), en la que Batman regresa a Ciudad Gótica después de una ausencia de diez años; y el arco argumental No Man's Land (1999), que retrata a una Gótica aislada del resto del mundo e invadida por pandillas. El héroe recibió el apodo «Dark Knight» —en español, «caballero de la noche» o «caballero oscuro»— por primera vez en Batman #1 (1940), en una historia escrita por Bill Finger.
+ 
+<span>PELICULA:</span><br> 
+ 
+Han pasado varios años desde el episodio transcurrido en The Dark Knight. Luego de la derrota del Joker, Batman siguió combatiendo contra el crimen desde la clandestinidad hasta que decidió retirarse. El trabajo estaba hecho. Gotham estaba segura y tranquila.
+Eran tiempos de aparente paz -inclusive la cúpula policial planea retirar a Gordon del servicio- hasta un nuevo villano aparece en Gotham: Bane. Un misterioso individuo con una guerrilla propia que se oculta en las alcantarillas de la ciudad, preparándose para emerger. <br>
+
+Durante un ataque a la Bolsa de Valores de Gotham City perpetrado por Bane, y ante la incapacidad de la Policía local para contenerlo, Batman decide regresar espectacularmente.
+El murcielago logra reducir a varios criminales pero Bane logra escapar. Bruce Wayne descubre que el verdadero motivo del atraco de Bane se basó en obtener sus datos bancarios y vaciar sus cuentas, dejándolo en la quiebra.
+
+Selina Kyle, una ladrona sorprendentemente hábil, aparece en escena simulando ayudar a Bruce, sin embargo ésta termina por traicionarlo dejándolo cara a cara con Bane. En una pelea donde Batman es humillado, el villano parte parcialmente la espalda del vigilante para luego encerrarlo en una prisión alejada del mundo, de la que sólo él mismo había logrado escapar. Bruce observa como su amada ciudad colapsa mientras él se encuentra atrapado en aquel agujero. Comienza así una etapa desesperada de recuperación y, tras un intento fallido, consigue salir de la prisión a través de aquella apertura inalcanzable. <br>
+
+Batman vuelve a Gotham para salvar a sus aliados de los tribunales improvisados por Scarecrow (reclutado por Bane) y ponerle fin a la tiranía de Bane. De esta manera, libera a toda la Policía de Gotham de los sistemas de desagüe y se enfrenta cara a cara con el villano para evitar un inminente ataque nuclear contra la ciudad. 
+
+En medio de una cruenta batalla con Bane en el Palacio de Justicia, Talia, quien hasta ese entonces parecía una contribuyente a la causa de Bruce y aliada en la lucha contra Bane, revela su identidad: Talia Al Ghul, hija de la cabeza del demonio Ra’s al Ghul, líder de la Liga de las Sombras a la que Batman había pertenecido. Además, se descubre que no había sido Bane quien había escapado de la prisión sino la pequeña hija de Ra’s, con la ayuda del gigante supervillano a quien, años más tarde, reclutaría. 
+
+Es así como Talia traiciona al héroe clavándole -literalmente- un puñal por la espalda, y acciona el detonador de la bomba delante suyo, solo que este no funciona ya que Jim Gordon en otra parte de la ciudad se encuentra obstruyendo la señal para que no explote. Al Ghul decide ir tras la bomba (que era transportada en un camión) y deja a Bane para que se encargue de un Batman vencido. Cuando Bruce estaba por ser ejecutado por el secuas de Talia, Catwoman (Selina Kyle) lo salva disparándole a Bane en medio del pecho. <br>
+
+Batman se une a la búsqueda de la bomba y logra obtenerla antes de que Talia la detone.  Pero la bomba ya iba a explotar, no había más tiempo. El Caballero Oscuro decide llevarla lo más lejos posible en su Batwing para que explote fuera de Gotham.
+
+El protector vigilante de Gotham parecía haber muerto cuando la bomba explotó a kilómetros de distancia. Los ciudadanos lloran su pérdida mientras monumentos se alzan en su memoria. Solo que Bruce Wayne no había muerto. Había comenzado una nueva vida secreta junto a Selina, pasándole el manto de caballero oscuro al joven John Blake, brillante policía de la ciudad de Gotham que ayudó en todo el proceso.
+
+				</p>
+			</div>
+			
+
+
+</div>
+
+
+</div>
+
+</body>
+</html>

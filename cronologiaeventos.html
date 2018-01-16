@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Prosto+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Carrois+Gothic" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+<link rel="stylesheet" href="main.css" type="text/css" media="screen">
+<link rel="stylesheet" href="main.css" type="text/css" media="handheld">
+<head>
+<title>Batmanía</title>
+
+
+
+<style type="text/css">
+
+
+	
+.contecrono{
+	margin-top: 6px;
+
+		box-shadow:-2px 23px 54px 8px rgba(0,0,0,1);
+	-webkit-box-shadow:-2px 23px 54px 8px rgba(0,0,0,1);
+	-moz-box-shadow:-2px 23px 54px 8px rgba(0,0,0,1);
+}
+.mescribir{
+	font-family: 'Special Elite', cursive;
+}
+
+/* Ocultar botón radio */
+input[id^="spoiler"]{
+display: none;
+}
+/* Estilo botón clicable */
+input[id^="spoiler"] + label {
+display: block;
+width: auto;
+margin: 5px ;
+padding: 13px ;
+color:white;
+background: black;
+-webkit-box-shadow: 0px 10px 59px 1px rgba(128,96,0,1);
+-moz-box-shadow: 0px 10px 59px 1px rgba(128,96,0,1);
+box-shadow: 0px 10px 59px 1px rgba(128,96,0,1);
+cursor: pointer;
+}
+/* Estilo botón cuando su INPUT está seleccionado */
+input[id^="spoiler"]:checked + label {
+color: #D64343;
+-webkit-box-shadow: 0px 10px 59px 1px rgba(212,0,0,1);
+-moz-box-shadow: 0px 10px 59px 1px rgba(212,0,0,1);
+box-shadow: 0px 10px 59px 1px rgba(212,0,0,1);
+background:  
+#BF0000;
+}
+/* Estilo caja SPOILER (inicialmente oculto) */
+input[id^="spoiler"] ~ .spoiler {
+
+width: 90%;
+height: 0;
+position: relative;
+overflow: hidden;
+border: solid 1.1px;
+background-color: #EDEDED;
+opacity: 0;
+margin: 8px auto 0; 
+}
+/* Estilo caja SPOILER cuando su INPUT está seleccionado */
+input[id^="spoiler"]:checked + label + .spoiler{
+
+
+height: 90%;
+transition:1.1s;
+-webkit-transition:1.1s;
+opacity: 1;
+}
+.texto{
+text-align:justify;
+	height: auto;
+	margin:4px;
+	font-size: 1.1em;
+}
+.comic{
+margin: 5px;
+float: right;
+height: 99px;
+width: 16%;
+
+
+
+}
+label{
+	position: relative;
+}
+.anio{
+	position:absolute;
+	font-size: 2em;
+	left:50.5%;
+	top:50%;
+	transform:translate(-50.5%,-50%);
+	-webkit-transform:translate(-50.5%,-50%);
+}
+img {
+border: solid 1px;
+width: 100%;
+	height: 100%;
+}
+.barra{
+height: 50px;
+
+}
+
+</style>
+
+
+
+
+</head>
+<body>
+<header >
+<div class="cabecera col-md-12">
+	<div class="titulomania">
+		<h1 class="blanco concert"> BATMANÍA</h1>
+	</div>
+	<img src="imgs/minima.jpg" class="img-responsive">
+</div>
+</header>
+<nav class="col-xs-12 col-md-12 col-sm-12 ">
+<ul class="ejm2 estilobar col-xs-12 col-md-12 col-sm-4 ">
+	<li class=" concert tamanionav col-xs-4 col-md-4 col-sm-4"><a class="colorr" href="index.html">INICIO </a></li>
+	<li class="  concert tamanionav col-xs-4 col-md-4 col-sm-4"><a class="colorr" href="serie.html">90´s SERIE</a></li>
+	<li class="  concert tamanionav col-xs-4 col-md-4 col-sm-4"><a class="colorr" href="comicstore.html">COMICSTORE </a></li>
+</ul>
+</nav>
+<div class="contecrono col-xs-12  col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 ">
+
+
+<input type="checkbox" id="spoiler1"> </input>
+<label for="spoiler1"> <div class="anio mescribir">1939</div><img src="imgs/barraz.png " class=" barra"></label>
+<div class="spoiler">
+<div class="comic"> <img src="imgs/1939.jpg"></div>
+<div class="texto concert"><p> <strong> 1939:</strong> Gracias al éxito logrado con Superman mediante Action Comics se produjo el incentivo necesario para que los editores de DC (en 1939 constituían una división de National Publications) para crear nuevos superhéroes. Así Bob Kane junto a su colaborador Bill Finger crearon a quien en principio seria “The Bat-Man” siendo el conocido personaje “El Zorro” gran fuente de inspiración para la creación del murciélago. <br>
+ La primera historia se llamó “El caso del sindicato químico” y fue publicada en el número 27 de Detective Comics en Mayo de 1939. En ese episodio Batman se enfrenta a un empresario químico que había asesinado a sus socios uno tras otro a fin de apoderarse del negocio.  Esta versión de Batman fue más inhumana y más violenta tomando a la muerte de sus enemigos como una opción viable. </p>
+
+
+</div>
+
+
+</div>
+
+
+<input type="checkbox" id="spoiler2"></input>
+<label for="spoiler2"> <div class="anio mescribir">1950</div><img src="imgs/barraz.png " class=" barra"></label>
+<div class="spoiler">
+<div class="comic"> <img src="imgs/1950.jpg"></div>
+<div class="texto concert">Durante los años 50, Batman fue uno de los pocos héroes que siguió publicándose a
+pesar de que el género estaba decreciendo. Hacia 1954, la publicación del libro "La
+Seducción del Inocente" del psiquiatra Fredric Wertham perjudicó la saga del murciélago
+al exponer que los niños imitan los crímenes descritos en las historietas, corrompiendo los valores de la juventud. <br>
+Finalizando la década, los argumentos de los cómics adoptaron una temática orientada
+a la ciencia ficción intentando asemejar el resultado en ventas de otros personajes
+inmersos en ese género. Es así como aparecieron "As, el Batisabueso", "Bat-Mite", alienígenas y demás.
+
+
+
+
+</div>
+
+
+</div>
+<input type="checkbox" id="spoiler3"></input>
+<label for="spoiler3"> <div class="anio mescribir">1960</div><img src="imgs/barraz.png " class=" barra"></label>
+<div class="spoiler">
+<div class="comic"> <img src="imgs/1960.jpg "></div>
+<div class="texto concert">
+En 1964 una drástica disminución en las ventas de los cómics de Batman hizo peligrar seriamente la continuidad del personaje en las tiras de DC. A fin de evitarlo, la empresa contrató al editor Julius Schwartz para renovar la serie. Así, se introdujeron cambios en el look del personaje -intentando hacerlo más moderno- y las narrativas tomaron un tono más detectivesco. Se suprimieron a los alienígenas, a Batwoman, As el Batisabueso, a Bat-Mite, e incluso a Alfred. <br>
+En 1966 se estrenó la serie de televisión Batman cuyo éxito incrementó las ventas de su
+homónimo en los cómics en un flujo cercano a las 900.000 copias. La serie sería cancelada
+en 1968 a pesar de los buenos resultados obtenidos. Las historietas del murciélago volvían
+a perder interés. 
+En 1969 Dennis O'Neil y Neal Adams comenzaron a describir un Batman apegado a las historias originales.
+
+
+
+</div>
+
+
+</div>
+
+<input type="checkbox" id="spoiler4"></input>
+<label for="spoiler4"><div class="anio mescribir">1970</div><img src="imgs/barraz.png " class=" barra"></label>
+<div class="spoiler">
+<div class="comic"> <img src="imgs/1970.jpg"></div>
+<div class="texto concert">
+Al tomar las riendas creativas de la historieta, O’Neil reinventó al personaje basándose en sus primeros relatos y distanciandose de la imagen proyectada en la serie televisiva. <br>
+La primera colaboración mutua de O’Neil y Adams fue en Detective Comics #395 (enero de 1970). Uno de los colaboradores, Dick Giordano, mencionó: "Regresamos al Batman oscuro y siniestro y creo que por eso las historias funcionan tan bien". Aún así, y a pesar de que el trabajo de O'Neil y Adams fue popular entre los seguidores, no consiguieron mejorar las ventas. Algo similar ocurrió con la versión de Steve Englehart y Marshall Rogers, que intentaron coordinarse e imitar el estilo interpretativo de Adams. Su colaboración, del #471 al #476, ha sido considerada como la fuente de inspiración directa de la primera película y la serie animada del personaje.
+
+
+</div>
+</div>
+
+<input type="checkbox" id="spoiler5"></input>
+<label for="spoiler5"><div class="anio mescribir">1980</div><img src="imgs/barraz.png " class=" barra"></label>
+<div class="spoiler">
+<div class="comic"> <img src="imgs/1980.jpg"></div>
+<div class="texto concert">
+Con la espectacular novela gráfica Batman: The Dark Knight Returns de Frank Miller
+publicada en 1986 se logró renovar al personaje. Fue un clasico instantaneo y
+se convirtió en uno de los mayores éxitos de la industria. Ese mismo año O´Neil pasó a
+ser editor responsable de Batman y aprovechando las influencias de la obra de Miller y la
+miniserie Crisis en Tierras Infinitas decidió constituir a murciélago como un héroe más
+legendario. <br>
+Así, en 1987, nació Batman: Año Uno de Frank Miller con ilustraciones de David Mazzucchelli, dando una nueva perspectiva del origen del personaje. En 1988 le sucedería The Killing Joke de Alan Moore siguiendo el tono realista de Año Uño y convirtiéndose en una de las mejores historias del murciélago. Meses después, a causa de la impopularidad de Jason Todd como Robin, DC abre una votación telefónica para determinar la suerte del personaje. Por un margen de 28 votos se opta por eliminarlo y en el comic Una Muerte en la Familia sería asesinado por el Joker.  <br>
+En 1989 se estrena Batman, dirigida por Tim Burton y protagonizada por Michael Keaton. La película fue todo un éxito en recaudación a nivel mundial, incrementando también las ventas de cómics del héroe de Gotham.
+
+
+</div>
+
+
+
+
+</div>
+<input type="checkbox" id="spoiler6"> </input>
+<label for="spoiler6"> <div class="anio mescribir">1990</div><img src="imgs/barraz.png " class=" barra"></label>
+<div class="spoiler">
+<div class="comic"> <img src="imgs/1990.jpg"></div>
+<div class="texto concert"><p> <strong> 1990:</strong> Los años 90 se caracterizaron por un endurecimiento de los personajes de las tramas con la llegada de Azrael (Jean-Paul Valley) (Sword of Azrael #1-4, 1992) o el villano Bane (Batman: Vengeance of Bane #1, 1993), así como la sobre explotación del personaje en largas sagas a modo de crossovers entre las colecciones existentes y 5 nuevas colecciones: Shadow of The Bat (1992), Robin y Catwoman (ambas de 1993), Batman Chronicles (1995) y Nightwing (1996). <br>
+Un breve repaso a las sagas de los 90 es el siguiente: <br>
+<strong>1994: La caída de Murciélago:</strong>  Azrael asume el papel de Batman cuando Bane le rompe la columna a Bruce Wayne y debe retirarse para recuperarse. <br>
+<strong>1995: Pródigo:</strong>  Dick Grayson asume temporalmente el papel de Batman, tras apartar Bruce Wayne a Azrael. <br>
+<strong>1996: Contagio / Legado:</strong>  Un virus lanzado por Ra’s Al Ghul pretende diezmar a la población mundial. <br>
+<strong>1999: Tierra de Nadie:</strong>  Tras el terremoto, Gotham es abandonada por el gobierno de los EEUU siendo tomada por los supervillanos. En cuanto a participaciones con el resto del universo DC, el mejor Batman de estos años, mas inteligente y líder que nunca, aparece en la nueva formación de la JLA guionizada por Grant Morrison y Mark Waid ya casi rozando la próxima década (1997-2001). <br>
+En el cine, los 90 trajo a “Batman Returns” (1992) una película calificada por algunos como de película excesivamente macabra, con el Pingüino y Catwoman que daría paso a dos películas de estilo opuesto e ínfima calidad como son “Batman Forever” (1995) y “Batman & Robin” (1997), el fracaso de de los últimos films haría esperar 8 años la próxima película del murciélago. Por otro lado en 1992 se lanzó “Batman: The Animated Series” posiblemente la mejor adaptación de un personaje de comic en una serie de animación.
+ </p>
+
+
+</div>
+
+</div>
+
+
+
+
+</div>
+
+
+
+</body>
+</html>

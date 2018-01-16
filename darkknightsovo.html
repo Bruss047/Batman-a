@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Prosto+One" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="darkknightsovo.css">
+<title>Batmanía</title>
+</head>
+<body>
+<header>
+<div class="cabecera col-md-12">
+	<div class="titulomania">
+		<h1 class="blanco concert"> BATMANÍA</h1>
+	</div>
+	<img src="imgs/minima.jpg" class="img-responsive">
+</div>
+</header>
+<nav class="col-xs-12 col-md-12 col-sm-12 ">
+<ul class="ejm2 estilobar col-xs-12 col-md-12 col-sm-4 ">
+	<li class=" concert tamanionav col-xs-4 col-md-4 col-sm-4"><a class="colorr" href="index.html">INICIO </a></li>
+	<li class="  concert tamanionav col-xs-4 col-md-4 col-sm-4"><a class="colorr" href="serie.html">90´s SERIE </a></li>
+	<li class="  concert tamanionav col-xs-4 col-md-4 col-sm-4"><a class="colorr" href="comicstore.html">COMICSTORE </a></li>
+</ul>
+</nav>
+<script type="text/javascript">
+
+function verificarRadios(){
+
+var opcionesA=0;
+var opcionesB=0;
+var opcionesC=0;
+
+	var elems = document.getElementsByTagName("input");
+	var bol= false;
+	for(var i = 0; i < elems.length; i++)
+	{
+		if(elems[i].checked){
+		var bol=true;	
+		}
+
+		if(elems[i].checked && elems[i].value=='a')
+		{opcionesA++;	
+		}
+		if(elems[i].checked && elems[i].value=='b')
+		{opcionesB++;	
+		}
+		if(elems[i].checked && elems[i].value=='c')
+		{opcionesC++;	
+		}
+	}
+
+
+	if( bol== false){
+	alert("No se ha seleccionado ninguna opción.");
+	}
+
+
+
+	Resultado(opcionesA,opcionesB,opcionesC);
+
+}
+
+function Reload(){
+	location.reload();
+}
+
+function Resultado(a,b,c){
+var xx=document.getElementById("opciona");
+
+var yy=document.getElementById("opcionb");
+
+var zz=document.getElementById("opcionc");
+
+
+if(a>b&&a>c){
+	document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+xx.style.visibility = 'visible';
+
+}else if(b>a&&b>c){
+	document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+yy.style.visibility = 'visible';
+
+}
+else if(c>a&&c>b){
+	document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+zz.style.visibility = 'visible';
+
+}else{
+	document.body.scrollTop = document.documentElement.scrollTop = 0;
+	yy.style.visibility = 'visible';
+}
+
+
+}
+
+
+</script>
+
+<div class=" contenedorsovo col-xs-12 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 text-center ">
+
+	<form class="formulario concert ">
+
+		<h2 class="titulocues">Sos un verdadero Dark Knight??</h2>
+		<label>1: Vas por la calle y presencias un robo:</label><br>
+		<input type="radio" name="p1" value="a">Intercedes a favor de la victima siempre y cuando sea posible ayudarla.<br>
+		<input type="radio" name="p1" value="b">Intercedes para ayudar a los criminales.<br>
+		<input type="radio" name="p1" value="c">Miras para otro lado y das por supuesto que los gritos de auxilio provienen de una radio vecina con el volumen demasiado alto.<br>
+		<br>
+
+		<label>2: Falta algo en tu habitación:</label><br>
+		<input type="radio" name="p2" value="a">Intentas ponerte minucioso y tratar de examinar la escena para dar con la persona que pudo haberse llevado ese objeto.<br>
+		<input type="radio" name="p2" value="b">Te pones minucioso para ver a quien podes culpar por el hecho sin siquiera procurar buscar mas en tu habitacion.<br>
+		<input type="radio" name="p2" value="c">Empezas a llorar por ese objeto que no esta y nunca va a volver. Salis esa misma tarde a comprarte otro.<br>
+		<br>
+
+		<label>3: En cuanto a tecnología:</label><br>
+		<input type="radio" name="p3" value="a">Sos muy seguidor de toda la rama no solo siendo el primero en enterarte de lo nuevo sino tambien procuras entender y utilizar cada tecnologia que te gusta a la perfeccion.<br>
+		<input type="radio" name="p3" value="b">Cuando sale algo nuevo procuras saber solo como funciona y luego te pones a buscar alguna version copia o mucho mas barata para adquirirlo.<br>
+		<input type="radio" name="p3" value="c">No te interesa en lo absoluto la tecnologia. Tu mejor GPS es una mapa tamaño A4 y te seguis comunicando con un Nokia 1100. <br>
+		<br>
+
+		<label>4: A la hora de realizar una tarea compleja:</label><br>
+		<input type="radio" name="p4" value="a">A la hora de realizar una tarea compleja:<br>
+		<input type="radio" name="p4" value="b">Decidis que te desenvolves mejor solo y que eso reduce tu margen de error.<br>
+		<input type="radio" name="p4" value="c">Cuantos mas mejor. Buscas varias personas que te ayuden a la vez que reparis el trabajo para que cada uno no trabaje tanto.<br>
+		<br>
+
+		<label>5: Queda pactado con tu abuela (quien vive en el fondo de tu casa) que ante cualquier hecho peligroso hacia su persona, ella tiene que prender la luz de la cocina para que la veas desde tu habitacion. Esto sucede una noche, vos:</label><br>
+		<input type="radio" name="p5" value="a">Acudis inmediatamente preparado para todo.<br>
+		<input type="radio" name="p5" value="b">Le gritas desde la ventana que sea quien sea apague toda la looz.<br>
+		<input type="radio" name="p5" value="c">Llamas a la policia, bomberos y una ambulancia para estar seguro.<br>
+		<br>
+		
+	</form>
+	
+	
+<div class="resultadovisual col-xs-8 col-xs-offset-2 col-md-8 col-md-offset-2  col-sm-8 col-sm-offset-2  " id="opciona"><p class="reintentar" onclick="Reload();"><strong>Reintentar</strong></p><img class="adaptable" src="imgs/batmiedoso.jpg" ><p class="textoresultado permanent">"Señorito Luminoso" <br> Tus actitudes estan lejos de las de un Dark Knight, pero bueno, siempre se puede ser un Alfred.</p></div>
+
+<div class="resultadovisual  col-xs-8 col-xs-offset-2 col-md-8 col-md-offset-2  col-sm-8 col-sm-offset-2  " id="opcionb"><p class="reintentar" onclick="Reload();"><strong>Reintentar</strong></p><img class="adaptable" src="imgs/batduda.png"><p class="textoresultado permanent">"Caballero Dudoso" <br> A Batman le costaria definirte. Un par de noches por Gotham o Lanús terminaria tu formación.</p></div>
+
+<div class="resultadovisual  col-xs-8 col-xs-offset-2 col-md-8 col-md-offset-2  col-sm-8 col-sm-offset-2 " id="opcionc"><p class="reintentar" onclick="Reload();"><strong>Reintentar</strong></p><img class="adaptable" src="imgs/darknight.jpg"><p class="textoresultado permanent">"Señorito Luminoso" <br> Tus actitudes estan lejos de las de un Dark Knight, pero bueno, siempre se puede ser un Alfred.</p></div>
+
+	<img src="imgs/fondovo.jpg " class="img-responsive">
+	<button class="prosto" style="position: absolute; margin-top: -40px; margin-left: -50px;" onclick="verificarRadios();"> Resultado!!</button>
+
+
+
+
+</div>
+
+</body>
+</html>

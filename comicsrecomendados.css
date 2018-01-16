@@ -1,0 +1,169 @@
+
+
+
+.contenedorcrec{
+background-color: #BC0707;
+margin-top: 4px;
+border-radius: 1%;
+    
+	box-shadow: -2px 23px 54px 8px rgba(0,0,0,1);
+   -webkit-box-shadow: -2px 23px 54px 8px rgba(0,0,0,1);
+   -moz-box-shadow: -2px 23px 54px 8px rgba(0,0,0,1);
+}
+
+
+@media screen and (max-width: 500px) {
+
+div .view{
+
+  
+    height: 28% ;
+    width: 42% ;
+
+  
+}
+
+div .view .mask, .view .content {
+      height: 100% ;
+    width: 100% ;
+   
+
+   
+}
+.view img {
+    display: block;
+    position: relative;
+    width: 124%;
+   
+}
+ .view .mask p {
+
+ font-size: 0.74em ;
+ font-style: bold;
+ color: white;
+   padding: 1px;
+
+    }
+
+    .view .mask h2{
+
+        font-size: 0.9em;
+    }
+
+
+}
+
+
+
+
+
+
+
+.view {
+    width: 180px;
+    height: 208px;
+    margin-left:  8%;
+    margin-top: 5px;
+    float: left;
+    border: 5px solid black;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #fff url(../images/bgimg.jpg) no-repeat center center
+}
+
+
+.view .mask, .view .content {
+    width: 180px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.view img {
+    display: block;
+    position: relative;
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 5px 0 0 0;
+}
+.view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    font-style: bold;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center;
+}
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+
+
+
+
+
+
+.view-first img { 
+    transition: all 0.2s linear;
+}
+.view-first .mask {
+    opacity: 0;
+    background-color: rgba(219,127,8, 0.7); 
+    transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-first p { 
+    transform: translateY(100px);
+    opacity: 0;
+	transition: all 0.2s linear;
+}
+.view-first a.info{
+    opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+
+.view-first:hover img { 
+	transform: scale(1.1);
+} 
+.view-first:hover .mask { 
+	opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.view-first:hover p {
+    transition-delay: 0.1s;
+}
+.view-first:hover a.info {
+    transition-delay: 0.2s;
+}
